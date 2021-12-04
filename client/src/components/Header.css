@@ -1,0 +1,28 @@
+.header {
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+
+  top: 0;
+  width: 100%;
+  position: sticky;
+  background-color: lightgray;
+  color: gray;
+}
+
+.header > a {
+  padding: 5px;
+  margin: 15px;
+
+  font-size: 17px;
+}
+
+.header > a:visited {
+  color: gray;
+}
+
+.header > a:hover {
+  color: black;
+}

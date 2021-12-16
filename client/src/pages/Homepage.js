@@ -18,6 +18,23 @@ function Homepage() {
           <Quote />
           {/* <Quote /> */}
           {/* --display-section */}
+
+          {/* three variables then->  -- three divs, or three <p> tags */}
+          {/* -- h3 top left --p centered -- display: flex-column*/}
+          {/* <div className="dailyQuote-section_previous">
+            <div className="dayOneQuote">
+              <h3>1 Day ago...</h3>
+              <p>{dayOneQuote}</p>
+            </div>
+            <div className="dayTwoQuote">
+              <h3>2 Days ago...</h3>
+              <p>{dayTwoQuote}</p>
+            </div>
+            <div className="dayThreeQuote">
+              <h3>3 Days ago...</h3>
+              <p>{dayThreeQuote}</p>
+            </div>
+          </div> */}
         </div>
       </div>
       <div className="quoteGenerator">

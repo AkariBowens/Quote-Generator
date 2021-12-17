@@ -1,0 +1,35 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 75%;
+  height: auto;
+}
+
+.quote--image__container {
+  width: 95%;
+  height: 400px;
+  background-color: rebeccapurple;
+
+  margin: auto;
+}
+
+.quote-image {
+  margin: auto;
+  width: 20%;
+  height: auto;
+}
+
+.quote--button__container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+
+  margin: 0.85rem;
+}
+
+.quote--button {
+  width: 200px;
+  font-size: 1.15rem;
+}

@@ -46,35 +46,27 @@ function Quote() {
     </div>
   );
   {
-    /* <div className="quote-section">
-      <div className="quote-section__display"> */
+    // </div>
+    // <div className="quote-section__categories">
+    {
+      /* dropdown_default-random menu */
+    }
+    {
+      /* form dropdown setamount */
+    }
+    {
+      /* event handler onClick for category and amount */
+    }
+    // </div>
+    {
+      /* <div className="quote-section__generate"> */
+    }
+    {
+      /*amount -- button element */
+    }
+    // </div>
+    // </div>
   }
-  {
-    /* window  */
-  }
-  {
-    /* <p>{newResponse}</p> */
-  }
-  // </div>
-  // <div className="quote-section__categories">
-  {
-    /* dropdown_default-random menu */
-  }
-  {
-    /* form dropdown setamount */
-  }
-  {
-    /* event handler onClick for category and amount */
-  }
-  // </div>
-  {
-    /* <div className="quote-section__generate"> */
-  }
-  {
-    /*amount -- button element */
-  }
-  // </div>
-  // </div>
 }
 
 export default Quote;

@@ -11,23 +11,33 @@ function Quote() {
 
   const getQuote = () => {
     // change id every time
-    var options = {
-      method: "GET",
-      url: "https://healthruwords.p.rapidapi.com/v1/quotes/",
-      params: { t: "Wisdom", maxR: "3", size: "medium", id: "731" },
-      headers: {
-        "x-rapidapi-host": "healthruwords.p.rapidapi.com",
-        "x-rapidapi-key": "26f54531bfmshdda1bdc35d9c8e8p17cd41jsn144a6b2d2d77",
-      },
-    };
+    // var options = {
+    //   method: "GET",
+    //   url: "https://healthruwords.p.rapidapi.com/v1/quotes/",
+    //   params: { t: "Wisdom", maxR: "3", size: "medium", id: "731" },
+    //   headers: {
+    //     "x-rapidapi-host": "healthruwords.p.rapidapi.com",
+    //     "x-rapidapi-key": "26f54531bfmshdda1bdc35d9c8e8p17cd41jsn144a6b2d2d77",
+    //   },
+    // };
 
-    Axios.request(options)
+    // Axios.request(options)
+    //   .then(function (response) {
+    //     console.log(response.data);
+    //     setQuote(response.data.media);
+    //   })
+    //   .catch(function (error) {
+    //     console.error(error);
+    //   });
+
+    Axios.get("https://type.fit/api/quotes")
       .then(function (response) {
-        console.log(response.data);
-        setQuote(response.data.media);
+        let randomInd = Math.floor(Math.random() * response.data.length);
+        console.log(response.data[randomInd]);
+        setQuote(response.data[randomInd]);
       })
       .catch(function (error) {
-        console.error(error);
+        console.log(error);
       });
   };
 
@@ -35,9 +45,18 @@ function Quote() {
     <div className="quote">
       <h1>Random Quote</h1>
 
-      <div className="quote--image__container">
+      {/* <div className="quote--image__container">
         <img className="quote--image" src={quote} alt="" />
+      </div> */}
+      <div className="quote--container">
+        <div className="quote--container__text">
+          <p>"{quote.text}"</p>
+        </div>
+        <div className="quote--container__author">
+          <p> - {quote.author}</p>
+        </div>
       </div>
+
       <div className="quote--button__container">
         <button className="quote--button" onClick={getQuote}>
           Get Random Quote

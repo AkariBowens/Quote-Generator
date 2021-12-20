@@ -31,23 +31,6 @@ h1 {
   font-size: 3rem;
 }
 
-/* .quote--image__container {
-  display: flex;
-  flex-direction: row;
-
-  width: 95%;
-  height: 50vh;
-  background-color: rebeccapurple;
- 
-  margin: auto;
-}
-
-.quote--image__container > img {
-  margin: auto;
-  width: 35%;
-  height: auto;
-} */
-
 .quote--button__container {
   display: flex;
   flex-direction: row;

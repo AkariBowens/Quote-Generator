@@ -11,16 +11,19 @@ h1 {
 }
 
 .quote--container {
-  background-color: khaki;
-
   display: flex;
   flex-direction: column;
 
   margin: auto;
   height: 500px;
   width: auto;
-
   padding: 40px;
+
+  /* background-color: khaki; */
+  background-color: #fffdcc;
+  border-radius: 15px;
+  border: 1px solid black;
+  box-shadow: 8px 8px #807f66;
 }
 
 .quote--container__text {
@@ -35,7 +38,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 95%;
+  width: 99%;
   height: auto;
 
   margin: 0.85rem;
@@ -43,17 +46,18 @@ h1 {
 
 .quote--button__container > button {
   width: 13rem;
+  height: 2.5rem;
   margin: 10px;
 
-  font-size: 1.15rem;
+  font-size: 1.25rem;
+  font-weight: 500;
   text-decoration: none;
-  border: 1px solid black;
+  border: 1.25px solid black;
   border-radius: 10px;
+
+  background-color: #99ddff;
 }
 
 .quote--button__container > button:hover {
-  background-color: grey;
+  background-color: #749eb3;
 }
-
-/* i can make a list of the colors that i want and create some logic so that every time the 
-background switches, so does the button and font, i don't want it to ever be fully white or black */

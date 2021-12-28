@@ -23,7 +23,6 @@ function Quote() {
 
   return (
     <div className="quote">
-      <h1>Random Quote</h1>
       <div className="quote--container">
         <div className="quote--container__text">
           <p>"{quote.text}"</p>

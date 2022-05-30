@@ -23,17 +23,17 @@ function Quote() {
 
   return (
     <div className="quote">
-      <div className="quote--container">
-        <div className="quote--container__text">
+      <div className="quote__container">
+        <div className="quote__container--text">
           <p>"{quote.text}"</p>
         </div>
-        <div className="quote--container__author">
-          <p> - {quote.author}</p>
+        <div className="quote__container--author">
+          <p> - {quote.author === null ? "Unknown Author" : quote.author}</p>
         </div>
       </div>
 
-      <div className="quote--button__container">
-        <button className="quote--button" onClick={getQuote}>
+      <div className="quote__button--container">
+        <button className="quote__button" onClick={getQuote}>
           Get Random Quote
         </button>
       </div>
